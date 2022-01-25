@@ -29,7 +29,7 @@ export default Home
 
 export async function getStaticProps() {
   const appURL = process.env.DEPLOY_URL || process.env.URL || process.env.APP_URL || 'http://localhost:3000';
-  const res = await fetch(`${process.env.APP_URL}/api/configuration`);
+  const res = await fetch(`${appURL}/api/configuration`);
   const imageConfig = await res.json();
   return {
     props: {
