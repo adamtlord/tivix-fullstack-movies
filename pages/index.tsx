@@ -28,9 +28,21 @@ const Home: NextPage<HomePageProps> = ({imageConfig}) => {
 export default Home
 
 export async function getStaticProps() {
-  const appURL = process.env.DEPLOY_URL || process.env.URL || process.env.APP_URL || 'http://localhost:3000';
-  const res = await fetch(`${appURL}/api/configuration`);
-  const imageConfig = await res.json();
+  const url = process.env.THEMOVIEDB_API_URL + 'configuration?api_key=' + process.env.THEMOVIEDB_API_KEY;
+  let imageConfig;
+  await fetch(url).then(
+    res => {
+      return res.json()
+    }
+  ).then(
+    configData => {
+      const {base_url, poster_sizes}  = configData.images;
+      imageConfig = {
+        base_url,
+        poster_sizes
+      }
+    }
+  );
   return {
     props: {
       imageConfig
