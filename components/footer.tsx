@@ -1,6 +1,6 @@
-import { NextComponentType } from "next";
+import React from "react";
 
-const Footer: NextComponentType = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="text-gray-300 text-sm fixed bottom-0 w-full text-center p-4">
       Powered by{' '}
