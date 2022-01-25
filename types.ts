@@ -34,7 +34,11 @@ export interface MovieListProps {
 
 export type MovieProps = {
   posterImageBaseURL: string,
-  movie: MovieData
+  movie: MovieData,
+}
+
+export type MovieDetailProps = {
+  movieID: string;
 }
 
 export interface MovieDetailsRequest extends NextApiRequest {

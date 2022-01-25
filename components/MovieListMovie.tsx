@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { MovieProps } from '../types';
 
 const Movie: React.FC<MovieProps> = ({movie, posterImageBaseURL}) => {
@@ -13,8 +14,11 @@ const Movie: React.FC<MovieProps> = ({movie, posterImageBaseURL}) => {
         height={138}
        />
        <div className="ml-6">
+
         <h3 className="text-xl font-semibold hover:text-red-700 hover:underline cursor-pointer">
-          {movie.title}
+          <Link href={`/movies/${movie.id}`}>
+            <a>{movie.title}</a>
+          </Link>
         </h3>
         <p>Released {new Date(movie.release_date).toDateString()}</p>
        </div>
