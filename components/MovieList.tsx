@@ -4,8 +4,7 @@ import type { MovieData, MovieListProps } from '../types';
 import React from 'react';
 import Image from 'next/image';
 
-
-const fetcher = (url:string) => fetch(url).then((res) => res.json());
+const fetcher = (url:string) => fetch(url).then(res => res.json())
 
 const MovieList: React.FC<MovieListProps> = ({posterImageBaseURL}) => {
   const { data, error } = useSWR('/api/trending', fetcher);
