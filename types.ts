@@ -38,7 +38,7 @@ export type MovieProps = {
 }
 
 export type MovieDetailProps = {
-  movieID: string;
+  movieID: string
 }
 
 export interface MovieDetailsRequest extends NextApiRequest {
