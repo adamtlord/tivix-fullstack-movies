@@ -1,3 +1,5 @@
+import {NextApiRequest} from 'next';
+
 interface ImageConfig {
   base_url: string;
   poster_sizes: string[];
@@ -33,4 +35,8 @@ export interface MovieListProps {
 export type MovieProps = {
   posterImageBaseURL: string,
   movie: MovieData
+}
+
+export interface MovieDetailsRequest extends NextApiRequest {
+  id: string
 }
