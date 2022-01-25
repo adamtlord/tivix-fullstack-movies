@@ -7,7 +7,7 @@ import Image from 'next/image';
 const fetcher = (url:string) => fetch(url).then(res => res.json())
 
 const MovieList: React.FC<MovieListProps> = ({posterImageBaseURL}) => {
-  const appURL = process.env.DEPLOY_URL || process.env.URL || process.env.APP_URL || 'http://localhost:3000';
+  const appURL = process.env.URL || process.env.APP_URL || 'http://localhost:3000';
   const { data, error } = useSWR(`${appURL}/api/trending`, fetcher);
   if (error) return (<p className="bg-red-100 text-red-800 p-6 rounded-lg">An error has occurred.</p>);
   if (!data) return (
