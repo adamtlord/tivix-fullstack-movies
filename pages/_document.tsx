@@ -10,7 +10,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="pb-24">
           <Main />
           <NextScript />
         </body>
