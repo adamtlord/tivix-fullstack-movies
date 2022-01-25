@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Layout from '../../components/layout'
 import Spinner from '../../components/Spinner';
 
-import { MovieDetailProps } from '../../types';
+import { Genre, MovieDetailProps, ProductionCompany } from '../../types';
 import Link from 'next/link';
 
 const fetcher = (url: string) => fetch(url).then(res => res.json())
@@ -38,14 +38,14 @@ const MovieDetails: React.FC<MovieDetailProps> = () => {
           <h1 className="font-bold text-2xl">{data.title}</h1>
           {data.tagline ? (<h2 className="text-lg italic">{data.tagline}</h2>) : ''}
           <div className="my-4">
-            {data.genres.map((g) => (<span key={g.id} className="bg-amber-200 uppercase text-sm mr-2 px-2 h-4 rounded-lg">{g.name}</span>))}
+            {data.genres.map((g:Genre) => (<span key={g.id} className="bg-amber-200 uppercase text-sm mr-2 px-2 h-4 rounded-lg">{g.name}</span>))}
           </div>
           <div className="space-y-4">
             <p>{data.overview}</p>
             <p><a href={data.homepage} className="text-red-700 font-semibold underline">{data.homepage}</a></p>
             <p><a href={`https://www.imdb.com/title/${data.imdb_id}`} className="text-red-700 font-semibold underline">IMDb Link</a></p>
           </div>
-          <p className="mt-4">Producers: {data.production_companies.map(p=> p.name).join(', ')}</p>
+          <p className="mt-4">Producers: {data.production_companies.map((p:ProductionCompany) => p.name).join(', ')}</p>
         </>
         )}
       </Layout>

@@ -33,8 +33,8 @@ export interface MovieListProps {
 }
 
 export type MovieProps = {
-  posterImageBaseURL: string,
-  movie: MovieData,
+  posterImageBaseURL: string;
+  movie: MovieData;
 }
 
 export type MovieDetailProps = {
@@ -43,4 +43,16 @@ export type MovieDetailProps = {
 
 export interface MovieDetailsRequest extends NextApiRequest {
   id: string
+}
+
+export interface Genre {
+  id: number;
+  name: string;
+}
+
+export interface ProductionCompany {
+  name: string;
+  id: number;
+  logo_path: string;
+  origin_country: string;
 }
