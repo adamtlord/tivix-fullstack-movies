@@ -18,7 +18,7 @@ const Layout: React.FC = ({ children }) => {
         <h1 className="text-7xl text-red-700 font-extrabold">
           TFMDb
         </h1>
-        <h2 className="text-4xl text-amber-400 font-bold">The Tivix Fullstack Move Database</h2>
+        <h2 className="text-4xl text-amber-400 font-bold">The Tivix Fullstack Movie Database</h2>
       </header>
       <main className="container mx-auto bg-white bg-opacity-80 py-10 px-12 rounded-2xl shadow-lg max-w-4xl drop-s">
         {children}
