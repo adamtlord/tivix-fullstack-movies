@@ -1,4 +1,4 @@
-import {NextApiRequest} from 'next';
+import { NextApiRequest } from 'next';
 
 interface ImageConfig {
   base_url: string;
@@ -6,21 +6,21 @@ interface ImageConfig {
 }
 
 export interface MovieData {
-  video:             boolean;
-  vote_average:      number;
-  overview:          string;
-  release_date:      string;
-  adult:             boolean;
-  backdrop_path:     string;
-  vote_count:        number;
-  genre_ids:         number[];
-  title:             string;
+  video: boolean;
+  vote_average: number;
+  overview: string;
+  release_date: string;
+  adult: boolean;
+  backdrop_path: string;
+  vote_count: number;
+  genre_ids: number[];
+  title: string;
   original_language: string;
-  original_title:    string;
-  poster_path:       string;
-  id:                number;
-  popularity:        number;
-  media_type:        string;
+  original_title: string;
+  poster_path: string;
+  id: number;
+  popularity: number;
+  media_type: string;
 }
 
 export interface HomePageProps {
@@ -38,11 +38,12 @@ export type MovieProps = {
 }
 
 export type MovieDetailProps = {
-  movieID: string
+  movieID: string;
+  imageConfig: ImageConfig;
 }
 
 export interface MovieDetailsRequest extends NextApiRequest {
-  id: string
+  id: string;
 }
 
 export interface Genre {

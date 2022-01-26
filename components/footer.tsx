@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-gray-300 text-sm fixed bottom-0 w-full text-center p-4">
+    <footer className="text-gray-300 text-sm fixed bottom-0 w-full text-center p-4 z-0">
       Brought to you by{' '}
       <a
         href="https://www.themoviedb.org/"

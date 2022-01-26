@@ -18,9 +18,9 @@ const Home: NextPage<HomePageProps> = ({ imageConfig }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="font-bold text-2xl">Trending Movies for {dateRange}</h3>
-          <p>Fetched from <a href="/api/movies" target="_blank" className="font-mono text-red-900 underline text-lg">/api/movies<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="md:flex items-center justify-between mb-4">
+          <h3 className="font-bold text-xl text-center md:text-left md:text-2xl">Trending Movies for {dateRange}</h3>
+          <p className="mt-4 md:mt-0 text-center md:text-left">Fetched from <a href="/api/movies" target="_blank" className="font-mono text-red-700 underline text-lg">/api/movies<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg></a></p>
         </div>
