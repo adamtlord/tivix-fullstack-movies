@@ -25,6 +25,7 @@ const Home: NextPage<HomePageProps> = ({ imageConfig }) => {
           </svg></a></p>
         </div>
         <MovieList posterImageBaseURL={posterImageBaseURL} />
+        <p>Amplified</p>
       </Layout>
     </div>
   )
