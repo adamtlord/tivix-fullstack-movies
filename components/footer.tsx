@@ -21,12 +21,12 @@ const Footer: React.FC = () => {
         Next.js
       </a>{' | '}
       <a
-        href="https://netlify.com/"
+        href="https://aws.amazon.com/amplify/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-amber-400 transition-colors hover:underline"
       >
-        Netlify
+        Amplify
       </a>{' | '}
       <a
         href="https://tailwindcss.com/"
