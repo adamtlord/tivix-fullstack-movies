@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['image.tmdb.org']
-  }
+  },
+  webpack5:false
 }
 
 module.exports = nextConfig
