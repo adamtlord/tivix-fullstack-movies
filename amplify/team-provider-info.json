@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tivixfullstackmovies-dev-163155-authRole",
+      "UnauthRoleArn": "arn:aws:iam::632087318562:role/amplify-tivixfullstackmovies-dev-163155-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::632087318562:role/amplify-tivixfullstackmovies-dev-163155-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-tivixfullstackmovies-dev-163155-deployment",
+      "UnauthRoleName": "amplify-tivixfullstackmovies-dev-163155-unauthRole",
+      "StackName": "amplify-tivixfullstackmovies-dev-163155",
+      "StackId": "arn:aws:cloudformation:us-west-1:632087318562:stack/amplify-tivixfullstackmovies-dev-163155/463f23b0-a581-11ec-a860-06520fe28ce5",
+      "AmplifyAppId": "dmqm4a1wd7qhq"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dmqm4a1wd7qhq",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
