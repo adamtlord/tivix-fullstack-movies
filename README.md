@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+We sometimes give this assignment as a coding test to candidates for Node or fullstack js positions. 
+
+## Demo
+
+https://elastic-mestorf-068f45.netlify.app/
+
 
 ## Getting Started
 
